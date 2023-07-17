@@ -100,7 +100,7 @@ public static class Localizer
         {
             StringCase.UPPER => ret.ToUpper(),
             StringCase.LOWER => ret.ToLower(),
-            StringCase.JADEN => ret.ToUpper()[0] + ret.ToLower()[1..],
+            StringCase.JADEN => ret.ToUpper()[0] + ret.ToLower().Substring(1),
             _ => ret,
         };
         return ret;
