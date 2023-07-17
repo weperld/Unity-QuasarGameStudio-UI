@@ -98,7 +98,6 @@ public class LevelupItemData
     }
 }
 
-// 레전더리 이상 경험치 추가 증가
 public class UIBase_CharacterLevelup : UIBase, IEnhancedScrollerDelegate
 {
     private class DragHandler : MonoBehaviour, IEndDragHandler, IBeginDragHandler
