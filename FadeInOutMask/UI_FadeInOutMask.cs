@@ -8,7 +8,7 @@ using UnityEngine.UI;
 using Debug = COA_DEBUG.Debug;
 
 [RequireComponent(typeof(CanvasGroup))]
-public class FadeInOutMask : MonoBehaviour
+public class UI_FadeInOutMask : MonoBehaviour
 {
     private const float FADE_TRANSITION_MIN = 0f;
     private const float FADE_TRANSITION_MAX = 10f;
