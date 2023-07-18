@@ -82,7 +82,7 @@ public class UI_ToggleSlider : MonoBehaviour
     }
     private void SetOnOffObj(bool isOn)
     {
-        go_On?.SetActive(isOn);
-        go_Off?.SetActive(!isOn);
+        go_On?.SetActive(!reverse == isOn);
+        go_Off?.SetActive(reverse == isOn);
     }
 }
