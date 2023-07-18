@@ -8,7 +8,6 @@ public class UI_TextSliderInspector : Editor
     SerializedProperty slideDirectionProp;
     SerializedProperty firstTmpuProp;
     SerializedProperty secondTmpuProp;
-    SerializedProperty resumeOnEnableProp;
     SerializedProperty tmpuBetweenProp;
     SerializedProperty slideSpeedProp;
     SerializedProperty offsetHProp;
@@ -25,7 +24,6 @@ public class UI_TextSliderInspector : Editor
     GUIContent gc_SecondTmpu = new GUIContent("Sub TMPU");
 
     GUIContent gc_SlideSettingValue = new GUIContent("Slide Option Values");
-    GUIContent gc_AutoResume = new GUIContent("Auto Resume On Enable");
     GUIContent gc_TmpuBetween = new GUIContent("Space Between TMPU");
     GUIContent gc_Speed = new GUIContent("Slide Speed", "Used only in situations where text slides are available.");
     GUIContent gc_Offset = new GUIContent("Axis Offset", "Horizontal Axis: Vertical offset\nVertical Axis: Horizontal offset");
@@ -51,7 +49,6 @@ public class UI_TextSliderInspector : Editor
         slideDirectionProp = serializedObject.FindProperty("currentDirection");
         firstTmpuProp = serializedObject.FindProperty("tmpu00");
         secondTmpuProp = serializedObject.FindProperty("tmpu01");
-        resumeOnEnableProp = serializedObject.FindProperty("resumeOnEnable");
         tmpuBetweenProp = serializedObject.FindProperty("space");
         slideSpeedProp = serializedObject.FindProperty("speed");
         offsetHProp = serializedObject.FindProperty("offset_H");
@@ -88,7 +85,6 @@ public class UI_TextSliderInspector : Editor
         if (slideSettingValueFoldOut)
         {
             EditorGUI.indentLevel += 1;
-            EditorGUILayout.PropertyField(resumeOnEnableProp, gc_AutoResume);
             EditorGUILayout.PropertyField(_Target._IsHorizontal ? offsetHProp : offsetVProp, gc_Offset);
             EditorGUILayout.PropertyField(tmpuBetweenProp, gc_TmpuBetween);
             EditorGUILayout.PropertyField(slideSpeedProp, gc_Speed);

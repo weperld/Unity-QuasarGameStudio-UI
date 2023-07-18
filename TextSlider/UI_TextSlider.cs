@@ -144,20 +144,6 @@ public class UI_TextSlider : MonoBehaviour
         TMPro_EventManager.TEXT_CHANGED_EVENT.Remove(OnTextChange);
     }
 
-    private void OnDisable()
-    {
-        Pause();
-    }
-    private void OnEnable()
-    {
-        if (resumeOnEnable)
-        {
-            if (slideCorout != null) Resume();
-            else RestartSlide();
-        }
-    }
-
-
     #region Public
     public void SetText(string str)
     {
