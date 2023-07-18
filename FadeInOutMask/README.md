@@ -7,4 +7,4 @@
 ## Visual
 >[자료 영상(Youtube)](https://youtu.be/f9bWg0IHd6g)
 
-![자료 이미지](./Image/00.png)
+![자료 이미지](Image/00.png)
