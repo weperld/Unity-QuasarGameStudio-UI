@@ -6,4 +6,4 @@
 - 각 object 별 동작은 함수 작성 후 DragDetector내의 필요한 Action에 등록하여 사용
 
 ## Visual
->[자료 화면(Youtube)](https://youtu.be/558QcmGuRsc)
+>[자료 영상(Youtube)](https://youtu.be/558QcmGuRsc)
