@@ -6,4 +6,4 @@
 - 각 기능에 대한 상세 코드는 함수 작성 후 DragDetector내의 Action에 각각 등록하여 사용
 
 ## Visual
-[![자료 화면]()(https://youtu.be/558QcmGuRsc)]
+>[자료 화면(Youtube)](https://youtu.be/558QcmGuRsc)
