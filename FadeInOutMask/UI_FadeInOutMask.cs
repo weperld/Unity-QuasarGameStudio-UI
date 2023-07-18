@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using Debug = COA_DEBUG.Debug;
 
-[RequireComponent(typeof(CanvasGroup))]
 public class UI_FadeInOutMask : MonoBehaviour
 {
     private const float FADE_TRANSITION_MIN = 0f;
@@ -54,6 +53,7 @@ public class UI_FadeInOutMask : MonoBehaviour
 
     #region Inspector
     public RectTransform rtf_FadeDetectRect;
+    public GameObject go_FadeTarget;
     public FadeType fadeType;
     [Range(FADE_TRANSITION_MIN, FADE_TRANSITION_MAX)]
     public float fadeTransition;
@@ -69,7 +69,12 @@ public class UI_FadeInOutMask : MonoBehaviour
     {
         get
         {
-            if (mask == null) mask = GetComponent<CanvasGroup>();
+            if (go_FadeTarget == null) go_FadeTarget = gameObject;
+            if (mask == null)
+            {
+                mask = go_FadeTarget.GetComponent<CanvasGroup>();
+                if (mask == null) mask = go_FadeTarget.AddComponent<CanvasGroup>();
+            }
             return mask;
         }
     }
