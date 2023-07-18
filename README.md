@@ -7,7 +7,6 @@ Engine: Unity<br>
 Language: C#<br>
 Role: UI Developer<br>
 
-
 ## 2. Development List
 - DragDetector
 - FadeInOutMask
@@ -21,4 +20,4 @@ Role: UI Developer<br>
 - Tooltip
 - VisualStory
 <br>
-※ 각 작업물의 자세한 내용은 해당 작업물의 폴더 내 README.md를 참고하시기 바랍니다.
+※ 자세한 내용은 각 작업물에 해당하는 폴더 내 README.md를 참고하시기 바랍니다.
