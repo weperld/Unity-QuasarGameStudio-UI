@@ -7,9 +7,9 @@
 
 ## Visual
 >Customized Track List<br>
-![Track List](Image/Customized%20Track%20List.png)
+![Track List](./Image/CustomizedTrackList.png)
 
 >Track Inspector Examples<br>
-![Example00](Image/Customized%20Track%20Inspector%20Example%2000.png)
-![Example01](Image/Customized%20Track%20Inspector%20Example%2001.png)
-![Example02](Image/Customized%20Track%20Inspector%20Example%2002.png)
+![Example00](./Image/CustomizedTrackInspectorExample00.png)
+![Example01](./Image/CustomizedTrackInspectorExample01.png)
+![Example02](./Image/CustomizedTrackInspectorExample02.png)
